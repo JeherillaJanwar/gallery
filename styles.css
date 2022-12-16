@@ -1,0 +1,19 @@
+html, body {
+  margin:0;
+  padding:0;
+  cursor:none;
+}
+
+body {
+  overflow: hidden;
+}
+
+#container {
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+svg {
+  position:fixed;  
+}
