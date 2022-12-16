@@ -143,10 +143,6 @@ function nextImg() {
 		.add(mouseClickOn)
 }
 
-function scaleImg(t){
-  gsap.fromTo(t, {scale:1, transformOrigin:'50%'}, {duration:4, scale:1.1, rotate:0.05, ease:'none'})
-}
-
 imgFg.append(imgBg.children[imgBg.children.length - 1])
 gsap.fromTo('circle', {
 	attr: {
@@ -159,8 +155,6 @@ gsap.fromTo('circle', {
 	},
 	ease: 'power2.inOut'
 })
-scaleImg(imgFg.children[0])
-scaleImg(imgBg.children[imgBg.children.length-1])
 
 const loop = gsap.timeline({
 		repeatRefresh: true,
